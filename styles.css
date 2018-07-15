@@ -1,12 +1,11 @@
-#container {
-  background: rgba(185, 228, 238, 1);
-  width: 400px;
-  margin: 50px auto auto auto;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+body {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
-  background: rgba(23, 80, 94, 1);
+  background: rgba(23, 80, 94, 1); /* dark teal */
   color: white;
   margin: 0;
   padding: 10px 20px;
@@ -15,10 +14,6 @@ h1 {
   font-weight: normal;
   font-family: 'Shadows Into Light', cursive;
   letter-spacing: 2px;
-}
-
-.fa-check-circle {
-  float: right;
 }
 
 ul {
@@ -35,12 +30,8 @@ li {
   color: #666;
 }
 
-li:nth-child(2n) {
-  background: rgba(227, 238, 237, 1);
-}
-
 span {
-  background: #e74c3c;
+  background: rgba(23, 80, 94, 1); /* red for trash */
   height: 35px;
   margin-right: 20px;
   text-align: center;
@@ -51,26 +42,34 @@ span {
   opacity: 0;
 }
 
+input {
+  font-size: 18px;
+  background-color: rgba(227, 238, 237, 1); /* light teal */
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  height: 50px;
+  color: #1a1a1a; /* black */
+  border: 3px solid rgba(0, 0, 0, 0); /* clear */
+}
+
+input:focus {
+  background: rgba(23, 80, 94, 0.2); /* very light teal */
+  border: 3px solid rgba(23, 80, 94, 1); /* dark teal */
+  outline: none;
+}
+
+li:nth-child(2n) {
+  background: rgba(227, 238, 237, 1); /* light teal */
+}
+
 li:hover span {
   width: 35px;
   opacity: 1;
 }
 
-input {
-  font-size: 18px;
-  background-color: rgba(227, 238, 237, 1);
-  width: 100%;
-  padding: 13px 13px 13px 20px;
-  box-sizing: border-box;
-  height: 50px;
-  color: #1a1a1a;
-  border: 3px solid rgba(0, 0, 0, 0);
-}
-
-input:focus {
-  background: rgba(23, 80, 94, 0.2);
-  border: 3px solid rgba(23, 80, 94, 1);
-  outline: none;
+.fa-check-circle {
+  float: right;
 }
 
 .task-completed {
@@ -78,8 +77,9 @@ input:focus {
   text-decoration: line-through;
 }
 
-body {
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#container {
+  background: white;
+  width: 400px;
+  margin: 50px auto auto auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* medium gray */
 }

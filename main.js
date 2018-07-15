@@ -5,7 +5,7 @@ $("ul").on("click", "li",function(){
 });
 
 $("ul").on("click", "span", function(event){
-  $(this).parent().fadeOut(1000, function(){
+  $(this).parent().fadeOut(500, function(){
     $(this).remove();
   });
   event.stopPropagation();
@@ -18,4 +18,7 @@ $("input[type='text']").keypress(function(event){
     $(this).val("");
   }
 });
-//$("input[type='text']").keypress(function(event){
+
+$(".fa-check-circle").click(function(){
+  $("input[type='text']").fadeToggle();
+})
