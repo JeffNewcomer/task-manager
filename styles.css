@@ -1,0 +1,85 @@
+body {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  background: rgba(23, 80, 94, 1); /* dark teal */
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+li {
+  background: #fff;
+  height: 35px;
+  line-height: 35px;
+  color: #666;
+}
+
+span {
+  background: rgba(23, 80, 94, 1); /* red for trash */
+  height: 35px;
+  margin-right: 20px;
+  text-align: center;
+  color: lightgray;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+input {
+  font-size: 18px;
+  background-color: rgba(227, 238, 237, 1); /* light teal */
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  height: 50px;
+  color: #1a1a1a; /* black */
+  border: 3px solid rgba(0, 0, 0, 0); /* clear */
+}
+
+input:focus {
+  background: rgba(23, 80, 94, 0.2); /* very light teal */
+  border: 3px solid rgba(23, 80, 94, 1); /* dark teal */
+  outline: none;
+}
+
+li:nth-child(2n) {
+  background: rgba(227, 238, 237, 1); /* light teal */
+}
+
+li:hover span {
+  width: 35px;
+  opacity: 1;
+}
+
+.fa-check-circle {
+  float: right;
+}
+
+.task-completed {
+  color: gray;
+  text-decoration: line-through;
+}
+
+#container {
+  background: white;
+  width: 400px;
+  margin: 50px auto auto auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* medium gray */
+}
